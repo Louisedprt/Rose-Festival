@@ -1,0 +1,146 @@
+/* Styles globaux */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: block;
+  text-align: left;
+  color: #000000;
+  font-size: 30px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #feadd8;
+  padding: 1rem;
+}
+
+.menu-icon {
+  margin-right: auto;
+}
+
+.logo {
+  max-width: 400px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #ff4d94;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff99cc;
+}
+
+.image1 {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+
+.button {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+/* Images */
+.image3, .image5, .image6 {
+  width: 30%;
+  margin: 10px auto;
+  display: block;
+}
+
+/* === Media Queries === */
+
+/* Pour tablettes (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+      flex-wrap: wrap;
+      text-align: center;
+  }
+
+  .logo {
+      max-width: 300px;
+      margin: auto;
+  }
+
+  .nav {
+      flex-direction: column;
+  }
+
+  .nav-item {
+      margin: 10px 0;
+  }
+
+  .image1 {
+      width: 100%;
+  }
+
+  .button {
+      font-size: 1rem;
+      padding: 8px 16px;
+  }
+}
+
+/* Pour smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+  header {
+      font-size: 24px;
+  }
+
+  .navbar {
+      padding: 0.5rem;
+  }
+
+  .nav-link {
+      font-size: 1rem;
+  }
+
+  .image1, .image3, .image5, .image6 {
+      width: 90%;
+  }
+
+  .button {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+  }
+
+  footer {
+      font-size: 0.8em;
+  }
+}
